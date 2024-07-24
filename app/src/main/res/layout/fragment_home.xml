@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:layout_marginTop="0dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/adViewStickyFooterContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <!-- sticky footer is outside of the scroll view. For adSize - see https://developers.google.com/android/reference/com/google/android/gms/ads/AdSize -->
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewStickyFooter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:adSize="BANNER"
+            app:adUnitId="/22037345/inapp-test-adunit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"
+            android:background="@color/black"
+            >
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:context=".ui.home.HomeFragment"
+        android:layout_marginBottom="50dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/text_para1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lora"
+                android:textColor="#5F5F5F"
+                android:gravity="start"
+                android:paddingBottom="20dp"
+                android:text="This is an Ozone demo app showing how to use the Ozone header bidding library with Google ad manager to request and display ads: Banner ads, video outstream, video instream, sticky ads, and interstitials showing banners and video, and also 'scratch card' interstitials. The code is not production-ready and should not be used directly as-is in a production app; rather, you take the ideas &amp; concepts from this app and apply them in an appropriate way in your own app. You will need to request account-specific information from Ozone for your app to work properly with the header bidding library, and integration assistance can also be sought."
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/element1"
+                layout="@layout/news_landing_single_element"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintTop_toBottomOf="@id/text_para1"
+
+                />
+
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:adSize="MEDIUM_RECTANGLE"
+                app:adUnitId="/22037345/inapp-test-adunit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/element1">
+
+            </com.google.android.gms.ads.AdView>
+
+
+            <include
+                android:id="@+id/element2"
+                layout="@layout/news_landing_single_element"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/element1" />
+
+
+            <TextView
+                android:id="@+id/text_instl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:paddingBottom="10dp"
+                android:text="Interstitial ads: (note there will not always be bids/ads)"
+                app:layout_constraintTop_toBottomOf="@id/element2"
+                android:paddingTop="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/text_instl"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="50dp"
+                >
+
+
+                <Button
+                    android:id="@+id/btn_instl_scratch"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center_horizontal"
+                    android:text="Scratch"
+                    android:visibility="visible"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_instl_video"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center_horizontal"
+                    android:text="Video"
+                    android:visibility="visible"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:enabled="true"
+                    />
+
+                <Button
+                    android:id="@+id/btn_instl_ical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center_horizontal"
+                    android:text="iCal"
+                    android:visibility="visible"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">NewsAllApps</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_business">Business</string>
+    <string name="menu_sport">Sport</string>
+
+    <string name="lorem_ipsum_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor dolor, auctor quis leo et, bibendum vulputate nibh.
+\n\n
+Nam tincidunt ornare nisi non vehicula. Quisque viverra diam id dictum suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+\n\n
+Morbi eget mi quis augue auctor tempus et at quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum laoreet magna quam, ac rhoncus tortor euismod in.
+\n\n
+Curabitur tortor erat, tincidunt vel cursus a, suscipit sit amet ipsum. Nullam sed tempus lorem. Nam quis elit metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam justo sapien, pellentesque fringilla metus eu.</string>
+    <string name="lorem_ipsum_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor dolor, auctor quis leo et, bibendum vulputate nibh.
+\n\n
+        Nam tincidunt ornare nisi non vehicula. Quisque viverra diam id dictum suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</string>
+</resources>

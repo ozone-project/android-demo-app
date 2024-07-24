@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".ui.home.HomeFragment"
+    android:layout_marginBottom="50dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/videoPlayerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp">
+
+            <RelativeLayout
+                android:id="@+id/instreamViewContainer"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/playButtonFrag4"
+                    android:layout_width="133dp"
+                    android:layout_height="125dp"
+                    android:background="@null"
+                    android:contentDescription="Play"
+                    android:src="@drawable/play" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_para1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:textSize="20sp"
+            android:text="@string/lorem_ipsum_2"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:fontFamily="@font/lora"
+            android:textColor="#5F5F5F"
+            app:layout_constraintTop_toBottomOf="@id/videoPlayerContainer"
+            />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            app:adSize="MEDIUM_RECTANGLE"
+            app:adUnitId="/22037345/inapp-test-adunit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_para1"></com.google.android.gms.ads.AdView>
+
+        <TextView
+            android:id="@+id/text_para2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:textSize="20sp"
+            android:text="@string/lorem_ipsum_2"
+            android:paddingBottom="20dp"
+            android:fontFamily="@font/lora"
+            android:textColor="#5F5F5F"
+            app:layout_constraintTop_toBottomOf="@id/adView1"
+            />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            app:adSize="MEDIUM_RECTANGLE"
+            app:adUnitId="/22037345/inapp-test-adunit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_para2">
+
+        </com.google.android.gms.ads.AdView>
+
+        <TextView
+            android:id="@+id/text_para3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:textSize="20sp"
+            android:text="@string/lorem_ipsum_2"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:fontFamily="@font/lora"
+            android:textColor="#5F5F5F"
+            app:layout_constraintTop_toBottomOf="@id/adView2"
+            />
+    </LinearLayout>
+
+</ScrollView>
+
